@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monder Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body{
+        background: url("backweb.avif");
+        background-size:auto;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    .nav{
+        background: rgba(82, 34, 237, 0.69);
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+.logocon{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.2rem;
+    margin-right: 2rem;
+}
+#nam{
+    color: rgb(171, 202, 223);
+    font-family:  cursive;
+}
+@keyframes anm{
+    0%{
+        background-color: transparent;
+        color: rgb(52, 52, 52);
+    }
+    40%{
+        background-color: rgb(99, 198, 205);
+        color: rgb(41, 41, 41);
+    }
+    80%{
+        background-color: rgb(55, 197, 210);
+        color: rgb(19, 19, 19);
+    }
+    100%{
+        background-color: rgb(22, 233, 253);
+        color: rgb(0, 0, 0);
+    }
+}
+#anc{
+    text-decoration: none;
+    color: white;
+    font-family: cursive;
+    display: flex;
+    margin-left: 3rem;
+    font-size: larger;
+    padding: 0.8rem;
+    border: 2px solid transparent;
+    border-radius: 1rem;
+}
+#anc:hover{
+    animation-name: anm;
+    animation-duration: 4s;
+    animation-delay: 5ms;
+    animation-iteration-count: infinite;
+}
+.tags li{
+    list-style: none;
+    display: inline-block;
+}
+#par{
+    padding-top: 8rem;
+    padding-left: 6rem;
+    color: rgb(185, 221, 252);
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+#par1{
+    padding-left: 6rem;
+    color: rgb(143, 255, 238);
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+#name{
+    color: rgb(77, 172, 255);
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 2.4rem;
+}
+#par2{
+    padding-left: 6rem;
+    color: rgb(59, 235, 255);
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 1.65rem;
+}
+#typ{
+    color: rgb(0, 200, 255);
+    font-size: 2rem;
+    font-family: Lucida;
+}
+#linkd {
+    background-color: rgb(13, 0, 255);
+    margin-left: 6rem;
+    border: 2px solid transparent;
+    font-size: 1.77rem;
+    padding: 0.4rem;
+    border-radius: 7rem;
+    color: rgb(119, 255, 0);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#linkd:hover {
+    box-shadow: 0px 0px 15px 5px rgba(166, 255, 0, 0.8);
+}
+
+</style>
+<body>
+    <div class="nav">
+        <div class="logocon">
+        <img src="logonayan.png" id="logo" style="width: 2.5rem;height: 2.7rem; border: 2px solid rgb(173, 171, 171); border-radius: 4rem; padding: 3px; background-color: rgb(28, 28, 28);">
+        <span id="nam">Monder</span>
+    </div>
+    <div class="tags">
+        <ul>
+            <li><a id="anc" href="portfolio.html">Home</a></li>
+            <li><a id="anc"  href="">About me</a></li>
+            <li><a id="anc"  href="">My projects</a></li>
+            <li><a id="anc"  href="">Contact me</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="txt">
+        <p id="par">Hi There!&#128075;</p>
+        <p id="par1">I'm <span id="name">Nayan Majumder</span> from VIT, Vellore</p>
+        <p id="par2">Passionate About Being a  <span id="typ"></span></p>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed=new Typed("#typ",{
+            strings:['Web Devoloper','Java Programmer','DSA Enthusiast'],
+            typeSpeed:77,
+            backSpeed:77,
+            loop:true,
+        });
+    </script>
+    <div class="link">
+        <a href="https://www.linkedin.com/in/nayan-majumder-4b427b28a/" target="new"><i class="fa-brands fa-linkedin" id="linkd"></i></a>
+        <a href="https://github.com/Nayanmj15" target="new"><i class="fa-brands fa-github" id="linkd"></i></a>
+        <a href="https://discord.com/channels/@me" target="new"><i class="fa-brands fa-discord" id="linkd"></i></a>
+
+    </div>
+</body>
+</html>
